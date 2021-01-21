@@ -1,0 +1,223 @@
+<button class="basicInfo" plain="true" bindtap="createBasicInfo" hover-class="none">
+    <view class="left">
+        <view class="me">
+            <text class="name">{{name}}</text>
+            <text class="iconfont iconbianji4"></text>
+        </view>
+        <view class="info">
+            <text class="year">10年经验</text>
+            <text class="age">32岁</text>
+            <text class="xueli">大专</text>
+        </view>
+    </view>
+    <view class="right">
+        <image src="{{avatar}}"></image>
+    </view>
+</button>
+<button class="introduce" plain="true"  bindtap="createIntroduce" hover-class="none">
+    <view class="head">
+        <text class="left title">个人优势</text>
+        <text class="iconfont iconbianji4"></text>
+    </view>
+    <view class="content">
+        乐山大佛骄傲了设计费是劳动法看见爱上了对方就乐山大佛骄傲了设计费是劳动法看见爱上了对方就乐山大佛骄傲了设计费是劳动法看见爱上了对方就乐山大佛骄傲了设计费是劳动法看见爱上了对方就乐山大佛骄傲了设计费是劳动法看见爱上了对方就乐山大佛骄傲了设计费是劳动法看见爱上了对方就
+    </view>
+</button>
+
+<view class="jobStatus">
+    <view class="left title">求职状态</view>
+    <view class="right">
+        <picker class="picker" range="{{jobStatus.list}}" bindchange="bindJobStatusChange" value="{{jobStatus.list[jobStatus.index]}}">
+            {{jobStatus.list[jobStatus.index]||'选择求职状态'}}
+        </picker>
+        <text class="iconfont iconxiangyou3"></text>
+    </view>
+</view>
+
+<view class="hopeJob">
+    <view class="head">
+        <view class="left title">求职期望</view>
+        <view class="right">
+            <button plain="true">
+                <text class="iconfont icontianjia"></text>
+            </button>
+        </view>
+    </view>
+    <view class="body">
+        <view class="left">
+            <view class="up">
+                <text class="name">web前端</text>
+                <text class="salary">15-25K</text>
+            </view>
+            <view class="down">
+                <text class="city">北京</text>
+                <text class="profession">不限行业</text>
+            </view>
+        </view>
+        <view class="right">
+            <text class="iconfont iconxiangyou3"></text>
+        </view>
+    </view>
+</view>
+
+<view class="workHistory">
+    <view class="head">
+        <view class="left title">工作经历</view>
+        <view class="right">
+            <button plain="true">
+                <text class="iconfont icontianjia"></text>
+            </button>
+        </view>
+    </view>
+    <view class="body">
+        <view class="item">
+            <view class="info">
+                <view class="left">
+                    <text class="name">巍峰时代</text>
+                    <view class="department">
+                        <text class="role">前端开发</text>
+                        <text class="departmentName">技术部</text>
+                    </view>
+                </view>
+                <view class="right">
+                    <text class="time">2016.02-2020.07</text>
+                    <text class="iconfont iconxiangyou3"></text>
+                </view>
+            </view>
+            <view class="content">内容：PC端应用有：巍峰养车网、巍峰养车网论坛、PC端应用有：巍峰养车网、巍峰养车网论坛PC端应用有：巍峰养车网、巍峰养车网论坛PC端应用有：巍峰养车网、巍峰养车网论坛PC端应用有：巍峰养车网、巍峰养车网论坛PC端应用有：巍峰养车网、巍峰养车网论坛</view>
+            <view class="best">业绩：有根据后台接口独自开发的，有利用开源程序独自开发的，用的技能或框架有HTML，CSS，JS，JQuery，BootStrap，Vue</view>
+            <view class="tags">
+                <text>HTML/CSS</text>
+                <text>Web前端</text>
+                <text>Javascript</text>
+            </view>
+        </view>
+    </view>
+</view>
+
+
+<view class="projectHistory">
+    <view class="head">
+        <view class="left title">项目经历</view>
+        <view class="right">
+            <button plain="true">
+                <text class="iconfont icontianjia"></text>
+            </button>
+        </view>
+    </view>
+    <view class="body">
+        <view class="item">
+            <view class="info">
+                <view class="left">
+                    <text class="name">巍峰养车商城</text>
+                    <text class="role">前端开发</text>
+                </view>
+                <view class="right">
+                    <text class="time">2016.02-2020.07</text>
+                    <text class="iconfont iconxiangyou3"></text>
+                </view>
+            </view>
+            <view class="content">内容：PC端应用有：巍峰养车网、巍峰养车网论坛、PC端应用有：巍峰养车网、巍峰养车网论坛PC端应用有：巍峰养车网、巍峰养车网论坛PC端应用有：巍峰养车网、巍峰养车网论坛PC端应用有：巍峰养车网、巍峰养车网论坛PC端应用有：巍峰养车网、巍峰养车网论坛</view>
+            <view class="best">业绩：有根据后台接口独自开发的，有利用开源程序独自开发的，用的技能或框架有HTML，CSS，JS，JQuery，BootStrap，Vue</view>
+        </view>
+    </view>
+</view>
+
+<view class="learnHistory">
+    <view class="head">
+        <view class="left title">教育经历</view>
+        <view class="right">
+            <button plain="true">
+                <text class="iconfont icontianjia"></text>
+            </button>
+        </view>
+    </view>
+    <view class="body">
+        <view class="item">
+            <view class="info">
+                <view class="left">
+                    <text class="name">南阳理工学院</text>
+                    <view class="edu">
+                        <text class="zhuanye">计算机应用技术</text>
+                        <text class="xueli">大专</text>
+                    </view>
+                </view>
+                <view class="right">
+                    <text class="time">2009-2011</text>
+                    <text class="iconfont iconxiangyou3"></text>
+                </view>
+            </view>
+            <view class="content"></view>
+        </view>
+        <view class="item">
+            <view class="info">
+                <view class="left">
+                    <text class="name">湖北银河信息技术学院</text>
+                    <view class="edu">
+                        <text class="zhuanye">软件开发</text>
+                        <text class="xueli">高中</text>
+                    </view>
+                </view>
+                <view class="right">
+                    <text class="time">2007-2009</text>
+                    <text class="iconfont iconxiangyou3"></text>
+                </view>
+            </view>
+            <view class="content">学习软件开发专业，在校期间获得学院级演讲比赛优秀奖</view>
+        </view>
+        <view class="item">
+            <view class="info">
+                <view class="left">
+                    <text class="name">鄢陵县第三高级中学</text>
+                    <view class="edu">
+                        <text class="zhuanye">美术</text>
+                        <text class="xueli">高中</text>
+                    </view>
+                </view>
+                <view class="right">
+                    <text class="time">2004-2007</text>
+                    <text class="iconfont iconxiangyou3"></text>
+                </view>
+            </view>
+            <view class="content">学习文化课及美术专业，取得高中学历</view>
+        </view>
+    </view>
+</view>
+
+<view class="certificate">
+    <view class="head">
+        <view class="left title">资格证书</view>
+        <view class="right">
+            <button plain="true">
+                <text class="iconfont icontianjia"></text>
+            </button>
+        </view>
+    </view>
+    <view class="body">
+        <text>计算机二级</text>
+    </view>
+</view>
+
+<view class="socialPages">
+    <view class="head">
+        <view class="left title">社交主页</view>
+        <view class="right">
+            <button plain="true">
+                <text class="iconfont icontianjia"></text>
+            </button>
+        </view>
+    </view>
+    <view class="body">
+        <view class="left">
+            <text class="iconfont iconzhuye2"></text>
+            <text class="url">https://vlon.cn</text>
+        </view>
+        <view class="right">
+            <text class="iconfont iconxiangyou3"></text>
+        </view>
+    </view>
+</view>
+
+<view class="export">
+    <button type="primary">导出</button>
+</view>

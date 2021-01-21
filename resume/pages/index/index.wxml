@@ -1,0 +1,25 @@
+<!--index.wxml-->
+<!-- <view class="container">
+  <view class="userinfo">
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>
+  </view>
+  <view class="usermotto">
+    <text class="user-motto">{{motto}}</text>
+  </view>
+</view> -->
+<!-- <button type="default" class="getUserInfoBtn" wx:if="{{canIUse&&!nickname}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo">获取头像昵称</button> -->
+
+<view class="list">
+  <view class="item">
+    <view class="left">
+      <button type="default" bindtap="goMyResume">{{id?"我的简历":"创建简历"}}</button>
+    </view>
+    <view class="right">
+      <button type="default" bindtap="goResumeModules">简历模板</button>
+    </view>
+  </view>
+</view>

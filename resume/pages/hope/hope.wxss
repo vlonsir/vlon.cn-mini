@@ -1,0 +1,15 @@
+page{display:flex;flex-direction: column;height:100%;}
+.section{display:flex;flex-direction: column;flex:1;font-size: 28rpx;}
+.title{font-size: 32rpx;font-weight: 700;padding-left: 20rpx;margin-bottom: 20rpx;}
+.item{display: flex;height:140rpx;align-items: center; justify-content: space-between;margin:0 20rpx;border-bottom: 1px solid #eee;box-sizing: border-box;}
+.item .left{display: flex;min-width: 150rpx;}
+.item .right{display: flex;justify-content: flex-end;}
+.item .right .choose{display:flex;background-color: #07c160;height:50rpx;padding:2rpx;border-radius: 8rpx;overflow: hidden;box-sizing: border-box;}
+.item .right .choose button{padding: 0;margin:0;font-size: 24rpx;font-weight: 400;width:50%;color: #07c160;border-radius: 0;align-items: center;display: flex;justify-content:center;padding:0 20rpx; transition: all 0.3s;}
+.item .right .choose button.on{color:#fff;background-color: #07c160;}
+.item .right .choose button:first-child{border-radius: 8rpx 0 0 8rpx;}
+.item .right .choose button:last-child{border-radius: 0 8rpx 8rpx 0;}
+.footer{padding:20rpx;border-top: 1px solid #eee;box-sizing: border-box;}
+.footer .save{width:100%;}
+.item .right input{text-align: right;}
+.item .right input.hangye{width:80rpx; text-align: center;}

@@ -1,0 +1,43 @@
+<view class="section">
+    <view class="title">添加求职期望</view>
+    <view class="item">
+        <view class="left">求职类型</view>
+        <view class="right">
+            <view class="choose">
+                <button class="{{jobType==0?'on':''}}" bindtap="changeJobType" data-index="0">全职</button>
+                <button class="{{jobType==1?'on':''}}" bindtap="changeJobType" data-index="1">兼职</button>
+            </view>
+        </view>
+    </view>
+    <view class="item">
+        <view class="left">工作城市</view>
+        <view class="right">
+            <picker mode="region" value="{{region}}" bindchange="bindRegionChange">
+                <text wx:if="{{region[0]}}">{{region[0]}}-{{region[1]}}-{{region[2]}}</text>
+                <text wx:else>请选择工作城市</text>
+            </picker>
+        </view>
+    </view>
+    <view class="item">
+        <view class="left">期望职位</view>
+        <view class="right">
+            <input value="{{jobName}}" class="jobName" maxlength="10" placeholder="请输入期望职位"></input>
+        </view>
+    </view>
+    <view class="item">
+        <view class="left">期望行业</view>
+        <view class="right">
+            <input value="{{hangye}}" class="hangye" maxlength="10" placeholder="请输入期望行业"></input>
+        </view>
+    </view>
+    <view class="item">
+        <view class="left">期望薪资</view>
+        <view class="right">
+            <input value="{{salary.min}}" class="hangye" maxlength="3" bindinput="bindSalaryMin"></input> - 
+            <input value="{{salary.max}}" class="hangye" maxlength="3" bindinput="bindSalaryMax"></input>
+        </view>
+    </view>
+</view>
+<view class="footer">
+    <button type="primary" class="save">保存</button>
+</view>

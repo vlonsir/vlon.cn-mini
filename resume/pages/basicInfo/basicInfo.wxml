@@ -1,0 +1,59 @@
+<view class="item">
+    <view class="left">头像</view>
+    <view class="right">
+        <button class="chooseBtn" plain="true" bindtap="chooseAvatar">
+            <image src="{{avatar}}" class="avatar"></image>
+        </button>
+    </view>
+</view>
+<view class="item">
+    <view class="left">姓名</view>
+    <view class="right">
+        <input value="{{name}}" class="name" maxlength="20" placeholder="请输入姓名" bindblur="changeName"></input>
+    </view>
+</view>
+<view class="item">
+    <view class="left">手机号</view>
+    <view class="right">
+        <input value="{{phone}}" class="phone" maxlength="11" placeholder="请输入手机号" bindblur="changePhone"></input>
+    </view>
+</view>
+<view class="item">
+    <view class="left">性别</view>
+    <view class="right">
+        <picker mode="selector" bindchange="bindSexChange" value="{{sex.list[sex.value]}}" range="{{sex.list}}">
+            {{sex.list[sex.value]||'请选择性别'}}
+        </picker>
+    </view>
+</view>
+<view class="item">
+    <view class="left">出生年月</view>
+    <view class="right">
+        <picker mode="date" bindchange="bindBirthdayChange" value="{{birthday}}" start="1900-01-01" end="2900-12-31">
+            {{birthday||'请选择出生年月'}}
+        </picker>
+    </view>
+</view>
+<view class="item">
+    <view class="left">参加工作时间</view>
+    <view class="right">
+        <picker mode="date" bindchange="bindWorkChange" value="{{work}}" start="1900-01-01" end="2900-12-31">
+            {{work||'请选择参加工作时间'}}
+        </picker>
+    </view>
+</view>
+<view class="item">
+    <view class="left">微信号</view>
+    <view class="right">
+        <input type="text" value="{{wechat}}" class="wechat" maxlength="30" placeholder="请输入微信号" bindblur="changeWechat"></input>
+    </view>
+</view>
+<view class="item">
+    <view class="left">邮箱</view>
+    <view class="right">
+        <input type="text" value="{{email}}" class="email" maxlength="30" placeholder="请输入邮箱" bindblur="changeEmail"></input>
+    </view>
+</view>
+<view class="item">
+    <button class="save" type="primary" bindtap="save">保存</button>
+</view>

@@ -1,0 +1,8 @@
+.item{padding:20rpx;min-height:150rpx;box-sizing: border-box;border-bottom: 1rpx solid #eee;margin: 0 20rpx;display: flex;align-items: center;justify-content: space-between;font-size: 28rpx;}
+.item .left{width:200rpx;display: flex;height:100%;}
+.item .right{display: flex;height:100%;justify-content: flex-end;flex:1;}
+.item .right .chooseBtn{border:none;padding:0;margin:0;width:auto;}
+.item .right .avatar{width:100rpx;height:100rpx;border-radius: 100%;display: block;overflow: hidden;}
+.item:last-child{border:none;}
+.item .right input{width:100%;height:100%;text-align: right;flex:1;}
+.item .save{width:100%;}

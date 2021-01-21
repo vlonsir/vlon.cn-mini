@@ -1,0 +1,7 @@
+.getUserInfoBtn{margin-top:100rpx;padding-top:100rpx;padding-bottom: 100rpx;}
+.list{display:flex;flex-direction: column;}
+.list .item{display: flex;}
+.list .item .left,
+.list .item .right{width:50%;display: flex;padding:20rpx;box-sizing: border-box;}
+.list .item .left button,
+.list .item .right button{padding-top:100rpx;padding-bottom:100rpx;box-sizing: border-box;}

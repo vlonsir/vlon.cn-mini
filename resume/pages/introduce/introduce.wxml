@@ -1,0 +1,25 @@
+<view class="title">我的优势</view>
+<view class="desc">一句话介绍自己，突出核心优势</view>
+<textarea class="content" value="{{content}}" placeholder="请输入内容" bindinput="onEntering" bindfocus="focusEntering" bindblur="blurEntering" ></textarea>
+<view class="tips">
+    <button class="left" plain="true" bindtap="lookOther">
+        <text class="iconfont iconyanjing5"></text>看看别人怎么写
+    </button>
+    <view class="right">
+        <text>{{words}}/140</text>
+        <button type="primary" class="complete" bindtap="save" wx:if="{{entering}}">完成</button>
+    </view>
+</view>
+<view class="exmple" wx:if="{{exmple.show}}">
+    <view class="head">
+        <view class="left">
+            <image class="avatar" src="{{exmple.list[exmple.index].icon}}"></image>
+            <text class="name">{{exmple.list[exmple.index].name}}</text>
+        </view>
+        <button class="right" bindtap="huanyige">换一个</button>
+    </view>
+    <view class="introduce">{{exmple.list[exmple.index].desc}}</view>
+</view>
+<view class="footer" wx:if="{{!entering}}">
+    <button type="primary" class="save" bindtap="save">保存</button>
+</view>
